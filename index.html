@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <title>Get the dot - Assignment 5</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="ressources/images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="ressources/images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="ressources/images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="ressources/images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="ressources/images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="ressources/images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="ressources/images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="ressources/images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="ressources/images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="ressources/images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ressources/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="ressources/images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ressources/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="ressources/images/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="vendors/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="ressources/css/styles.css">
+
+    <script src="vendors/jquery/jquery.min.js"></script>
+    <script src="vendors/font-awesome/font-awesome.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="panel">
+        <div class="panel-body text-center">
+            <div class="text-left">
+                <h1 class="page-header">Get the dot
+                    <small>by <a href="https://github.com/CorentinTh" target="_blank" title="My github">Corentin THOMASSET</a></small>
+                </h1>
+            </div>
+
+            <div id="canvas-container">
+                <div id="blur-canvas">
+                    <form id="formSetPseudo">
+                        <div id="pseudo-form-error" class="alert alert-danger" style="display: none">Pseudo format
+                            incorrect.
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Your pseudo ..." id="pseudo-input">
+                            <div class="input-group-btn">
+                                <button class="btn btn-success" type="submit">
+                                    <i class="fas fa-angle-double-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            Move with <code>arrow keys</code> or <code>ZQSD</code> (french keyboard, sorry). The goal is to eat the red
+            dot before the other players.
+        </div>
+    </div>
+</div>
+
+
+<script src="vendors/p5.js/p5.min.js"></script>
+<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+<script src="https://rawgit.com/OAlm/pb2/master/static/pb2_client.js"></script>
+<script src="vendors/bootstrap/bootstrap.min.js"></script>
+
+<script src="ressources/js/io.js"></script>
+<script src="ressources/js/dom.js"></script>
+<script src="ressources/js/Target.js"></script>
+<script src="ressources/js/Leaderboard.js"></script>
+<script src="ressources/js/Player.js"></script>
+<script src="ressources/js/game.js"></script>
+</body>
+</html>
